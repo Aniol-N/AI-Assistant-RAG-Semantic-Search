@@ -1,0 +1,8 @@
+torch
+transformers
+sentence-transformers
+scikit-learn
+fastapi
+uvicorn
+gradio
+pydantic
