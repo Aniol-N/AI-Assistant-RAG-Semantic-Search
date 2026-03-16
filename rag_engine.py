@@ -32,7 +32,10 @@ with open("documents.json", "r", encoding="utf-8") as f:
 if isinstance(raw_data, dict):
     documents = list(raw_data.values())
 else:
-    documents = [item["texto"] if isinstance(item, dict) and "texto" in item else str(item) for item in raw_data]
+    documents = [
+        item["texto"] if isinstance(item, dict) and "texto" in item else str(item)
+        for item in raw_data
+    ]
 
 print(f"Loaded {len(documents)} documents.")
 
@@ -79,7 +82,7 @@ def get_answer(query, retrieved_documents):
 
     output_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     if output_text.startswith(prompt):
-        return output_text[len(prompt):].strip()
+        return output_text[len(prompt) :].strip()
     return output_text.split("Answer:", 1)[-1].strip()
 
 
@@ -88,13 +91,11 @@ def ask(query, top_k=2, umbral=0.4):
     return get_answer(query, docs)
 
 
-def recuperar_documentos(consulta, top_k=2, umbral=0.4):
-    return get_documents(consulta, top_k, umbral)
+def main():
+    user_input = input("Enter your question (or 'exit' to quit): ")
+    answer = ask(user_input)
+    print(f"Answer: {answer}\n")
 
 
-def generar_respuesta(consulta, documentos_recuperados):
-    return get_answer(consulta, documentos_recuperados)
-
-
-def preguntar(consulta, top_k=2, umbral=0.4):
-    return ask(consulta, top_k, umbral)
+if __name__ == "__main__":
+    main()
