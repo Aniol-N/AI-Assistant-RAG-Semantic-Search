@@ -1,4 +1,4 @@
-![chrome_Ilxk5mb3Ei](https://github.com/user-attachments/assets/55873fcf-9155-4609-99d0-09b4ae725686)# AI Assistant RAG Semantic Search
+# AI Assistant RAG Semantic Search
 
 Asistente de preguntas y respuestas basado en RAG (Retrieval-Augmented Generation) que responde usando únicamente contexto recuperado de una base documental.
 
