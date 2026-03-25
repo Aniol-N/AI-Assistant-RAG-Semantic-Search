@@ -47,6 +47,28 @@ python -m venv .venv
 # Linux/macOS
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
-#Ejecucion:
+## Ejecución
+```bash
 python app.py
+```
+
+## Preview
+
+### Vista rápida
+- Prueba en vivo: https://huggingface.co/spaces/anioln/AI-Assistant-RAG-Semantic-Search
+- Flujo visible en la UI: pregunta -> respuesta -> documentos recuperados.
+
+### Capturas (UI)
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+## Dataset de ejemplo
+El contenido base usado para estas pruebas está en `documents.json` e incluye:
+- Datos de contacto del hospital.
+- Horario de atención.
+- Correo oficial.
+- Servicios principales.
+- Ubicación del hospital.
