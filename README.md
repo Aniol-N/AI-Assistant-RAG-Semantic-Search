@@ -1,4 +1,4 @@
-# AI Assistant RAG Semantic Search
+![chrome_Ilxk5mb3Ei](https://github.com/user-attachments/assets/55873fcf-9155-4609-99d0-09b4ae725686)# AI Assistant RAG Semantic Search
 
 Asistente de preguntas y respuestas basado en RAG (Retrieval-Augmented Generation) que responde usando únicamente contexto recuperado de una base documental.
 
@@ -62,8 +62,8 @@ python app.py
 
 ### Capturas (UI)
 
-![alt text](image-2.png)
-![alt text](image-3.png)
+![chrome_Ilxk5mb3Ei](https://github.com/user-attachments/assets/768c8122-9e14-46b0-bc1a-af938e525d89)
+![chrome_pISXj1mUCx](https://github.com/user-attachments/assets/0372f459-d77c-4323-8743-781fa0f063e7)
 
 ## Dataset de ejemplo
 El contenido base usado para estas pruebas está en `documents.json` e incluye:
